@@ -140,7 +140,6 @@ int main() {
 
             sendto(sockfd, response, response_len, 0,
                    (struct sockaddr *)&client_addr, client_len);
-            std::cout << "blocked domain: " << query << std::endl;
 
           } else {
             int upstream_sock = socket(AF_INET, SOCK_DGRAM, 0);
